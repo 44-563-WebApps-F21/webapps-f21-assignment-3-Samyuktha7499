@@ -24,7 +24,7 @@ Directions from maryville to vizag.
     <li>Take car from hyderabad to vizag.</li>
 <ol>
    <li>Head east on Hyderabad - Janagam Hwy/Koti Women's College Rd/Main Rd Continue to follow Hyderabad - Janagam Hwy/Main Rd Pass by Venkateshwara Medical Store (850 m).</li>
-    <li>NH65 and NH16 to Andhra Pradesh 6 hr 13 min (349 km)</li>
+   <li>NH65 and NH16 to Andhra Pradesh 6 hr 13 min (349 km)</li>
    <li>Take GNT Road, Rajahmundry Rd and Godavari Fourth Bridge to NH16 1 hr 46 min (83.4 km)</li>
    <li>Follow NH16 to Narsipatnam Road/Narsipatnam Tallapalem Rd 2 hr 33 min (145 km</li>
    <li>Continue straight past 9 TEA SHOP onto NH1 Pass by church (on the left 17.9 km.Continue straight through Gandepalli Jct to stay on NH16 Pass by Sebhari Internet And Xerox (on the left) 17.6 km.</li>
@@ -83,5 +83,25 @@ Directions from maryville to vizag.
         <td>200 INR</td>
         </tr>
 </table>
+
+<hr>
+
+<blockquote>In mathematics, the Fibonacci numbers, commonly denoted Fn, form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,[1]
+    0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,...Fibonacci numbers are strongly related to the golden ratio: Binet's formula expresses the nth Fibonacci number in terms of n and the golden ratio, and implies that 
+    the ratio of two consecutive Fibonacci numbers tends to the golden ratio as n increases.</blockquote>
+    <pre>int, int> fib (int n) {
+        if (n == 0)
+            return {0, 1};
+    
+        auto p = fib(n >> 1);
+        int c = p.first * (2 * p.second - p.first);
+        int d = p.first * p.first + p.second * p.second;
+        if (n & 1)
+            return {d, c + d};
+        else
+            return {c, d};
+    }
+</pre>
+
  
 </html>
